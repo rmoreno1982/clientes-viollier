@@ -1,0 +1,190 @@
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+   
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i,
+span {
+    display: inline-block;
+}
+
+
+.color-a{background: #B9E6FF;color: #000;}
+.color-b{background: #c0f1d6;color: #294636;}
+.color-c{background: #72daef;color: #fff;}
+.color-d{background: #ff9a31;color: #fff;}
+
+.color-e{color: #fff;background-color: #99c402;font-weight: 500!important;}
+.color-f{color: #1e8391;background-color: #ddf8fc;font-weight: 500!important;}
+.color-r{color: #ffeeed;background-color: #df230e;font-weight: 500!important;}
+.color-n{color: #fff;background-color: #ff8c00;font-weight: 500!important;}
+
+.fondo-login{background: #eeeeee; }
+.border-verde{border-color: #b7b7b7!important;}
+.boton-ingresar{background:#1ABB9C ;}
+.circulo-logo{margin: 0 auto 20px auto; text-align: center; }
+.circulo-logo img{height: 70px;}
+.box-login{background: #fff;}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    background: #e9ecf3;
+    min-height: 100vh;
+    transition: all 0.3s;
+	/*padding-right: 60px;*/
+}
+.header-page{background: #2d323e;position: sticky; top: 0px;z-index: 1;}
+.bg-clientes{
+  color: #fff;}
+  .header-page .logo-clientes .logo-icon{width: 50px;}
+  .bg-clientes .nav-link{color: #fff!important;}
+/*buscador*/
+
+
+
+/*titulo de paginas*/
+.header-locacion{background-color: #ff9a31; padding:1.2em 1em;}
+.header-locacion-clientes{background-color: #1ABB9C; padding:1.2em 1em; display: flex;align-items: center;color: #fff}
+.header-locacion-clientes small{padding-left: 5px;}
+.header-locacion h1, .header-locacion-clientes h1{font-size: 24px;color: #fff; margin: 0px 5px 0px 0px;}
+
+/*contenido de paginas*/
+.v-card{padding: 1em;}
+
+.form-group .cliente-ingreso, .form-group .poliza-ingreso{position: absolute; top: 8px; right: 8px;}
+
+.sidebar-header2{text-align: center;background: #3c4252;position: sticky;top: 0;}
+
+
+
+.addcliente{border-left: 5px solid #ffc106;}
+
+
+
+
+
+/*Editor de documentos*/
+
+.editor-doc{border:1px dashed #ccc; padding:20px;background: #f5f5f5;}
+.editor-doc svg{font-size:2rem;}
+.editor-doc .doc{background: #fff;}
+.editor-doc .doc a{display: block; padding: 1em}
+.editor-doc .doc a:hover{background:#abdfec;}
+.editor-doc .exportar svg{font-size:2.5rem;color:#11caf0;}
+
+
+.table-documentos a{color: #df230e;}
+
+
+.datos-siniestro{background: #000;color: #fff;display: flex;}
+.datos-siniestro .folio{background: #8f2222;}
+.datos-siniestro .folio, .datos-siniestro .numero{padding: 15px;}
+.estado{padding: 5px 15px;background:#e4e4e4; }
+.grid-content label{font-weight: bold;}
+.cabecera{}
+.mas-detalles{display: inline-block;background: #fff;padding: 4px 8px;border:1px dotted #b1b1b1;font-size: 0.8rem;}
+
+@media screen and (max-width: 600px) {
+  
+  .fondo-login{background: #eeeeee; height: 100%;}
+}
+@media screen and (max-width: 992px) {
+  .table-documentos {
+    border: 0;
+  }
+  .table-documentos caption {
+    font-size: 1.3em;
+  }
+  .table-documentos thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .table-documentos tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  .table-documentos td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1em;
+    text-align: left;
+  }
+  .table-documentos td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    /*float: left;*/
+    font-weight: bold;
+    margin-right: 5px;
+    text-transform: uppercase;
+  }
+  .table-documentos td:last-child {
+    border-bottom: 0;
+  }
+}
