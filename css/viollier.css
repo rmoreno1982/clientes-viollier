@@ -116,7 +116,93 @@ span {
 
 .addcliente{border-left: 5px solid #ffc106;}
 
+.table-documentos .text-end{display: flex;align-items: center;justify-content: flex-end;}
 
+
+ .btn-icon-circle {
+    background-color: #fff;
+    color: white;
+        border: 1px dotted #b1b1b1;
+    border-radius: 50%;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+     margin-right: 3px;
+  }
+
+  .btn-icon-circle:hover {
+    background-color: #1ABB9C;color: #fff;
+  }
+
+.thumb-img {
+      cursor: pointer;
+      border: 1px solid #2d323e;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .thumb-img:hover,
+    .thumb-img.active {
+      
+       border: 2px solid #1ABB9C;
+    }
+
+    .carousel-inner img {
+      object-fit: contain;
+      max-height: 500px;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-inner img {
+        max-height: 300px;
+      }
+    }
+
+.timeline {
+  position: relative;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 15px; /* CENTRADO */
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #dee2e6;
+  border-radius: 2px;
+}
+
+.timeline-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+  /* Tarjeta de contenido */
+  .timeline-content {
+    flex-grow: 1;
+    position: relative;
+  }
+
+  /* Separación entre items */
+  .timeline-item {
+    margin-bottom: 1.75rem;
+  }
 
 
 
@@ -139,7 +225,7 @@ span {
 .estado{padding: 5px 15px;background:#e4e4e4; }
 .grid-content label{font-weight: bold;}
 .cabecera{}
-.mas-detalles{display: inline-block;background: #fff;padding: 4px 8px;border:1px dotted #b1b1b1;font-size: 0.8rem;}
+.mas-detalles{display: inline-block;background: #fff;padding: 4px 8px;border:1px dotted #b1b1b1;font-size: 0.8rem; margin-left: 10px; }
 
 @media screen and (max-width: 600px) {
   
